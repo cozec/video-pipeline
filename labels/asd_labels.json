@@ -1,0 +1,213 @@
+{
+  "video": "sfmta",
+  "window": {
+    "start_frame": 0,
+    "end_frame": 750,
+    "seconds": "0.0-30.0"
+  },
+  "method": "Mouth state read from per-track filmstrips sampled every 5 frames over the 224x224 face crops (results/eval/mouth_t*.jpg, mouth_crowd.jpg). Frames where the call was genuinely ambiguous are excluded from the label set rather than guessed.",
+  "assumptions": [
+    "Shot 3 is event b-roll under the reporter's voice-over, so no on-screen face is the source of the audio. Several crowd faces DO move their mouths (smiling, talking to each other) in this window - they are deliberately included as hard negatives.",
+    "Track 1 frames 311-331 are excluded: the reporter's mouth opens briefly, which could be a smile/reaction or a short interjection.",
+    "Track 3 frames 456-465 are excluded: the transition from closed mouth into speech cannot be pinned to a single frame by eye."
+  ],
+  "tracks": [
+    {
+      "track_id": 0,
+      "who": "studio anchor",
+      "spans": [
+        {
+          "start_frame": 0,
+          "end_frame": 230,
+          "speaking": true
+        }
+      ]
+    },
+    {
+      "track_id": 1,
+      "who": "field reporter (split screen, listening)",
+      "spans": [
+        {
+          "start_frame": 231,
+          "end_frame": 310,
+          "speaking": false
+        },
+        {
+          "start_frame": 332,
+          "end_frame": 415,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 2,
+      "who": "studio anchor (split screen, talking)",
+      "spans": [
+        {
+          "start_frame": 231,
+          "end_frame": 416,
+          "speaking": true
+        }
+      ]
+    },
+    {
+      "track_id": 3,
+      "who": "field reporter piece to camera",
+      "spans": [
+        {
+          "start_frame": 417,
+          "end_frame": 455,
+          "speaking": false
+        },
+        {
+          "start_frame": 466,
+          "end_frame": 686,
+          "speaking": true
+        }
+      ]
+    },
+    {
+      "track_id": 4,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 687,
+          "end_frame": 721,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 5,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 687,
+          "end_frame": 714,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 6,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 687,
+          "end_frame": 724,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 7,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 696,
+          "end_frame": 721,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 8,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 701,
+          "end_frame": 750,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 9,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 701,
+          "end_frame": 722,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 10,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 706,
+          "end_frame": 750,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 11,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 716,
+          "end_frame": 750,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 12,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 719,
+          "end_frame": 736,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 13,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 721,
+          "end_frame": 750,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 14,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 726,
+          "end_frame": 750,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 15,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 731,
+          "end_frame": 750,
+          "speaking": false
+        }
+      ]
+    },
+    {
+      "track_id": 16,
+      "who": "shot-3 event b-roll crowd face",
+      "spans": [
+        {
+          "start_frame": 740,
+          "end_frame": 750,
+          "speaking": false
+        }
+      ]
+    }
+  ]
+}

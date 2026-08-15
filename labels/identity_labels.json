@@ -1,0 +1,32 @@
+{
+  "video": "sfmta",
+  "n_tracks_total": 85,
+  "method": "Hand-labelled from per-track crop thumbnails (results/eval/all_tracks_*.jpg) with candidate repeats re-checked at higher resolution across three frames each (results/eval/grp_*.jpg).",
+  "coverage_policy": "Only tracks whose identity can be called with confidence are labelled. Most shot 3-8 b-roll faces are 40-100 px profiles that cannot be reliably matched by eye; labelling them by guess would fabricate the ground truth, so they are excluded. Pairwise metrics are computed over labelled pairs only, so a singleton here asserts only that it differs from the other LABELLED tracks - not that it appears nowhere else.",
+  "excluded_examples": {
+    "tracks_70_73_75": "black cap + dark jacket, plausibly one person, faces too occluded to confirm",
+    "track_76": "red cap like 61/69 but no glasses visible and different skin tone - unresolved"
+  },
+  "track_person": {
+    "0": "ANCHOR",
+    "2": "ANCHOR",
+    "1": "REPORTER",
+    "3": "REPORTER",
+    "84": "REPORTER",
+    "83": "INTERVIEWEE_GLASSES",
+    "64": "CROWD_HOOP_WOMAN",
+    "66": "CROWD_HOOP_WOMAN",
+    "80": "CROWD_HOOP_WOMAN",
+    "61": "CROWD_GLASSES_REDCAP",
+    "69": "CROWD_GLASSES_REDCAP",
+    "10": "CROWD_ORANGECAP_WOMAN",
+    "24": "CROWD_ORANGECAP_WOMAN",
+    "12": "CROWD_BLACKCAP_GLASSES_SMILING",
+    "29": "CROWD_WOMAN_S4",
+    "33": "CROWD_MAN_S4",
+    "40": "CROWD_OLDER_MAN_S5",
+    "42": "CROWD_SMILING_WOMAN_S6",
+    "44": "CROWD_CURLYHAIR_S6",
+    "77": "CROWD_YOUNG_MAN_S8"
+  }
+}

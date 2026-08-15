@@ -1,0 +1,16 @@
+ffmpeg-python==0.2.0
+huggingface_hub==1.27.0
+insightface==1.0.1
+numpy==2.5.2
+onnxruntime==1.28.0
+opencv-python==5.0.0.93
+pandas==3.0.5
+pillow==12.3.0
+python_speech_features==0.6
+scenedetect==0.7.1
+scikit-learn==1.9.0
+scipy==1.18.0
+torch==2.13.0
+tqdm==4.70.0
+transnetv2-pytorch==1.0.5
+yt-dlp==2026.7.4

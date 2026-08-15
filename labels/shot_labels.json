@@ -1,0 +1,15 @@
+{
+  "video": "sfmta",
+  "n_frames": 4172,
+  "method": "Hand-adjudicated. Candidate boundaries were pooled from TransNetV2 (t=0.5) and PySceneDetect ContentDetector at thresholds 27, 15 and 10, giving 42 distinct candidates. Every candidate not agreed by both detectors was inspected as a frame-pair (b-2, b+2) in results/eval/{disputed,recall_a,recall_b}.jpg and judged cut / not-cut by eye.",
+  "boundaries": [231, 417, 687, 820, 978, 1105, 1353, 1462, 2053, 2814, 2925, 3008, 3063, 3202, 3272, 3282, 3439, 3554],
+  "rejected_candidates": {
+    "note": "Inspected and judged NOT cuts - all are camera/subject motion inside a continuous take.",
+    "frames": [877, 1038, 1053, 1084, 1144, 1174, 1204, 1224, 1240, 1267, 1295, 1315, 1392, 1416, 1496, 1536, 1572, 1622, 1642, 1662, 1697, 1727, 1768, 1803, 1858, 1878, 1949, 1964, 2844, 2894, 2960, 3045, 3126, 3151, 3161, 3176, 3247, 3257, 3312, 3322, 3394, 3413, 3488, 3519, 3770]
+  },
+  "notes": [
+    "f3282 (exterior bus -> interior bus) is a real cut found only by TransNetV2; PySceneDetect at t=27 missed it.",
+    "f3045, f3126, f3151 are PySceneDetect false positives from fast bus/pan motion.",
+    "Shots 8 (58.5-82.1s) and 9 (82.1-112.6s) are genuinely long single takes - both detectors agree, and the dense-crowd candidates inside them were all rejected on inspection."
+  ]
+}
